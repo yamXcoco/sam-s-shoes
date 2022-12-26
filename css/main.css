@@ -96,3 +96,95 @@ body {
   bottom: 100px;
   left: 0;
 }
+.slide .text_box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: #000;
+  letter-spacing: -3px;
+}
+.slide .text_box p {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+.banner ul {
+  display: flex;
+  justify-content: space-between;
+}
+.banner ul li {
+  width: 632px;
+  height: 642px;
+  background-color: #111;
+  color: #fff;
+  position: relative;
+}
+.banner li h2 {
+  position: absolute;
+  top: 50px;
+  left: 48px;
+  font-weight: 800;
+  font-size: 40px;
+}
+.banner ul li a {
+  position: absolute;
+  bottom: 36px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 30px;
+}
+/* product */
+.product {
+  margin-top: 130px;
+}
+.product h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+.product ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.product ul::after {
+  content: "";
+  position: absolute;
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 7px;
+  bottom: 0px;
+}
+.product ul li {
+  width: 305px;
+  padding-bottom: 63px;
+  position: relative;
+}
+.product ul li::after {
+  content: "";
+  position: absolute;
+  background-color: #111;
+  width: 0%;
+  height: 7px;
+  bottom: 0px;
+  z-index: 1;
+  /* 레이어(z-index)앞으로 정렬해서 보이도록 */
+  transition: width 0.4s;
+}
+.product ul li:hover::after {
+  width: 100%;
+}
+.product ul li .detail p.name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.product ul li .detail p.price {
+  font-size: 18px;
+}
+.product .detail {
+  padding-left: 12px;
+  padding-top: 10px;
+}
