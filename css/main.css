@@ -29,6 +29,9 @@ a {
   background-color: #111;
   color: #fff;
 }
+.btn_full {
+  width: 100%;
+}
 body {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: "Poppins", sans-serif;
